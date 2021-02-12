@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Doğan Can Topal Portfolio" />
+    <meta name="author" content="Doğan Can Topal" />
+    <title>Doğan Can Topal | Portfolio</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 left-side">
+          <div class="avatar">
+            <img
+              class="rounded-circle"
+              src="img/profile-circle.png"
+              alt="Responsive image"
+              width="180"
+            />
+          </div>
+          <h5>Doğan Can Topal</h5>
+          <div class="social">
+            <h4>
+              <a
+                class="github"
+                target="_blank"
+                href="https://github.com/dogantopal"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                class="linkedin"
+                target="_blank"
+                href="https://www.linkedin.com/in/do%C4%9Fan-can-topal-7b77a7133/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </h4>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h2><strong>Merhaba!</strong></h2>
+          <p>
+            Şu anda tam zamanlı olarak
+            <a target="_blank" href="https://www.bilgeadam.com">Bilge Adam</a
+            >'da yazılım geliştiriciliği yapmaktayım.
+          </p>
+          <p>
+            Yaklaşık <span id="how-many-years-i-develop">x</span> yıldır yazılım
+            geliştiriciliği yapıyorum. Profesyonel geliştiricilik yaşamıma
+            2015’de başladım. C# dilini, .Net ve .Net Core Frameworklerini ve Restful
+            apilerini yazarken ve kullanırken çok rahat bir şekilde geliştirme
+            yapabiliyorum. Aynı zamanda kişisel projelerim için Node.js’e ve
+            React'a ilgi duymaktayım.
+          </p>
+          <p>
+            Yazılım geliştirme yaşam döngüsü ve Agile çalışma metodojileri
+            hakkında bilgim var. Bir önceki çalıştığım yerde takım liderliği
+            görevini üstlenmekteydim. Şu anda çalıştığım Bilge Adam kurumunda
+            ise 7 kişilik scrum takımında scrum master’lık rolündeyim.
+          </p>
+          <p>
+            Bana ulaşmak isterseniz mail adresim
+            <a href="mailto:dogan.can.topal@hotmail.com"
+              >dogan.can.topal@hotmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <script>
+      function yearDifference(date1, date2) {
+        var diff = (date1.getTime() - date2.getTime()) / 1000;
+        diff /= 60 * 60 * 24;
+        return Math.round(diff / 365.25);
+      }
+
+      var now = new Date();
+      var dateStartToDevelop = new Date(2015, 02, 01);
+
+      var howManyYearsIDevelop = yearDifference(now, dateStartToDevelop);
+      document.getElementById(
+        "how-many-years-i-develop"
+      ).innerText = howManyYearsIDevelop;
+    </script>
+  </body>
+</html>
